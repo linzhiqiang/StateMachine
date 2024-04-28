@@ -10,5 +10,5 @@ fi
 
 mkdir -p $artifactsFolder
 
-dotnet restore ./KafkaMessageBus.sln
-dotnet build ./KafkaMessageBus.sln -c Release
+dotnet restore ./Aix.StateMachines.sln
+dotnet build ./Aix.StateMachines.sln -c Release

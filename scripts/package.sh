@@ -10,8 +10,8 @@ fi
 
 mkdir -p $artifactsFolder
 
-dotnet restore ./KafkaMessageBus.sln
-dotnet build ./KafkaMessageBus.sln -c Release
+dotnet restore ./Aix.StateMachines.sln
+dotnet build ./Aix.StateMachines.sln -c Release
 
 
-dotnet pack ./src/KafkaMessageBus/Aix.KafkaMessageBus.csproj -c Release -o $artifactsFolder
+dotnet pack ./src/Aix.StateMachines/Aix.StateMachines.csproj -c Release -o $artifactsFolder

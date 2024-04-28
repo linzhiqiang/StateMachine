@@ -11,8 +11,8 @@ fi
 mkdir -p $artifactsFolder
 
 
-dotnet build ./src/KafkaMessageBus/Aix.KafkaMessageBus.csproj -c Release
+dotnet build ./src/Aix.StateMachines/Aix.StateMachines.csproj -c Release
 
-dotnet pack ./src/KafkaMessageBus/Aix.KafkaMessageBus.csproj -c Release -o $artifactsFolder
+dotnet pack ./src/Aix.StateMachines/Aix.StateMachines.csproj -c Release -o $artifactsFolder
 
-dotnet nuget push ./$artifactsFolder/Aix.KafkaMessageBus.*.nupkg -k $PRIVATE_NUGET_KEY -s https://www.nuget.org
+dotnet nuget push ./$artifactsFolder/Aix.StateMachines.*.nupkg -k $PRIVATE_NUGET_KEY -s https://www.nuget.org

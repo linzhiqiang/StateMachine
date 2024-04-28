@@ -1,4 +1,5 @@
-﻿using Aix.StateMachines;
+﻿
+using Aix.StateMachines;
 using Aix.StateMachineTests.Common;
 using System;
 using System.Collections.Generic;
